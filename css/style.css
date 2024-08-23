@@ -1,0 +1,933 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: url('https://img.freepik.com/free-photo/laptop-computer-book-workplace-library-room_1150-5925.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#header-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+p {
+    color: #4E342E;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#header-box p {
+    color: #6D4C41;
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+#content-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+h2 {
+    color: #4E342E;
+    border-bottom: 2px solid #D32F2F;
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+p {
+    text-align: justify;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    background-color:#D32F2F;
+}
+
+#footer-box {
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto 0;
+    box-sizing: border-box;
+    clear:both;
+}
+
+footer p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #BF360C;
+    text-decoration: none;
+}
+
+#register {
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 100%; 
+    max-width: 500px; 
+    box-sizing: border-box; 
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1.1em;
+    color: #4E342E;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #D32F2F; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.error {
+    color: #D32F2F; 
+    font-size: 1.1em;
+}
+
+.success {
+    color: #388E3C; 
+    font-size: 1.1em;
+}
+
+footer a:hover
+{
+    text-decoration: underline;
+}
+
+#login {
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 100%; 
+    max-width: 500px; 
+    box-sizing: border-box;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#admin-login {
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 100%; 
+    max-width: 500px; 
+    box-sizing: border-box; 
+    margin: auto;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#admin-register {
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 100%; 
+    max-width: 500px; 
+    box-sizing: border-box;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#nav-box a:hover {
+    background-color: #D32F2F; 
+    color: #fff;
+}
+
+#dashboard {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#dashboard h2 {
+    color: #4E342E; 
+    border-bottom: 2px solid #D32F2F; 
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+#dashboard p {
+    font-size: 1.1em;
+}
+
+#nav-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+#nav-box a {
+    color: #4E342E;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+#nav-box li {
+    display: inline;
+}
+
+
+#profile {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 500px; 
+    box-sizing: border-box;
+    margin: auto;
+    
+}
+
+#profile h2 {
+    color: #4E342E; 
+    border-bottom: 2px solid #D32F2F;
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+#profile form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#profile label {
+    font-size: 1.1em;
+    color: #4E342E;
+}
+
+#profile input[type="text"],
+#profile input[type="email"],
+#profile input[type="password"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#profile input[type="text"]:focus,
+#profile input[type="email"]:focus,
+#profile input[type="password"]:focus {
+    border-color: #D32F2F;
+    outline: none;
+}
+
+#profile button {
+    background-color: #D32F2F;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+#books {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#books h2 {
+    color: #4E342E;
+    border-bottom: 2px solid #D32F2F;
+    padding-bottom: 10px;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#books table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#books table th,
+#books table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#books table th {
+    background-color: #4E342E; 
+    color: #fff;
+}
+
+#books table td {
+    background-color: #f9f9f9;
+}
+
+#books table td button {
+    background-color: #D32F2F; 
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4E342E;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+#borrowed-books {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#borrowed-books h2 {
+    color: #4E342E;
+    border-bottom: 2px solid #D32F2F;
+    padding-bottom: 10px;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#borrowed-books table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#borrowed-books table th,
+#borrowed-books table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#borrowed-books table th {
+    background-color: #4E342E;
+    color: #fff;
+}
+
+#borrowed-books table td {
+    background-color: #f9f9f9;
+}
+
+#borrowed-books table td a {
+    color: #D32F2F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#logout {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#logout h2 {
+    color: #4E342E;
+    margin: 0;
+    font-size: 2em;
+    border-bottom: 2px solid #D32F2F;
+    padding-bottom: 10px;
+}
+
+#logout p {
+    color: #6D4C41;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+#logout a {
+    color: #D32F2F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#dashboard {
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#dashboard h2 {
+    color: #4E342E;
+    border-bottom: 2px solid #D32F2F; 
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+#dashboard p {
+    font-size: 1.1em;
+}
+
+#manage-books {
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+h3 {
+    color: #4E342E;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select {
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #CCC;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #F5F5F5;
+    color: #4E342E;
+}
+
+td a {
+    color: #D32F2F;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+#manage-members {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+}
+
+#manage-members h2 {
+    color: #4E342E;
+    border-bottom: 2px solid #D32F2F;
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+#manage-members form {
+    margin-bottom: 30px;
+}
+
+#manage-members form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#manage-members form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#manage-members form button {
+    background-color: #D32F2F; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 200px;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #F5F5F5;
+    color: #4E342E;
+}
+
+td a {
+    color: #4E342E;
+    text-decoration: none;
+    padding: 5px;
+}
+
+td a:hover {
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+#view-borrowing-records {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#view-borrowing-records h2 {
+    color: #4E342E;
+    border-bottom: 2px solid #D32F2F;
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+#view-borrowing-records form {
+    margin-bottom: 20px;
+}
+
+#view-borrowing-records form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#view-borrowing-records form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#view-borrowing-records form button {
+    background-color: #D32F2F;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+#view-borrowing-records form button:hover {
+    background-color: #B71C1C;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #F5F5F5;
+    color: #4E342E; 
+}
+
+td {
+    color: #4E342E;
+}
+
+td a {
+    color: #4E342E;
+    text-decoration: none;
+    padding: 5px;
+}
+
+td a:hover {
+    color: #000000;
+    border-radius: 4px;
+    text-decoration: underline;
+}
+
+#logout {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#logout h2 {
+    color: #4E342E;
+    border-bottom: 2px solid #D32F2F;
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+#logout p {
+    color: #4E342E;
+    font-size: 1.2em;
+}
+
+#logout a {
+    color: #D32F2F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#logout a:hover {
+    text-decoration: underline;
+}
+
+#content-box p {
+    font-size: 20px;
+}
+
+#footer-box p {
+    font-size: medium;
+    color: black;
+}
+
+#register p, #login p,#admin-login p, #admin-register p {
+    font-size: medium;
+}
+
+#content {
+    margin-bottom: 40px;
+}
+
+#book-details {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#book-details h2 {
+    color: #4E342E; 
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+#book-details h3 {
+    color: #4E342E; 
+}
+
+#book-details p {
+    font-size: 1.1em;
+    color: #4E342E; 
+}
+
+#book-details a {
+    color: #D32F2F; 
+    text-decoration: none;
+}
+
+#book-details a:hover {
+    text-decoration: underline;
+}
+
+#book-details form {
+    margin-top: 20px;
+}
+
+#book-details textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#book-details input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #D32F2F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 200px;
+}
+
+#book-details input[type="submit"]:hover {
+    background-color: #BF360C; 
+}
+
+#book-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+#book-details li {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+#book-details strong {
+    color: #4E342E;
+}
+
+#book-details em {
+    color: #6D4C41;
+}
+
+#container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#header-box h1 {
+    color: #4E342E;
+    margin: 0;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#content {
+    margin-bottom: 40px;
+}
+
+#book-list {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#book-list h2 {
+    color: #4E342E;
+    border-bottom: 2px;
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+#book-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#book-list th, #book-list td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#book-list th {
+    background-color: #4E342E;
+    color: #FFFFFF;
+}
+
+#book-list td {
+    background-color: #FFFFFF;
+}
+
+#book-list a {
+    color: #D32F2F;
+    text-decoration: none;
+}
+
+#book-list a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    #header-box,
+    #content-box,
+    #footer-box,
+    #register,
+    #login,
+    #admin-login,
+    #admin-register,
+    #profile,
+    #books,
+    #borrowed-books,
+    #manage-books,
+    #manage-members,
+    #view-borrowing-records {
+        max-width: 100%;
+    }
+}
